@@ -1,22 +1,21 @@
 
 def css():
     init = [
-        '*,;',
-        '::before,;',
-        '::after {;',
+        '*,',
+        '::before,',
+        '::after {',
         '    box-sizing: border-box;',
         '    margin: 0;',
         '    padding: 0;',
-        '};',
-        '.bg {;',
-        '    background: url(;',
-        '        "https://images.unsplash.com/photo-1631515998058-69359a50da68?ixlib");',
-        '    background-repeat: no-repeat;',
-        '    background-attachment: fixed;',
-        '    background-size: cover;',
-        '    height: 100 %;',
-        '    padding-top: 15 %;',
-        '};'
+        '}'
+    ]
+    back = [
+        'background: url(',
+        '    "https://images.unsplash.com/photo-1631515998058-69359a50da68?ixlib");',
+        'background-repeat: no-repeat;',
+        'background-attachment: fixed;',
+        'background-size: cover;',
+        'height: 100%;'
     ]
     base = ["margin: auto;",
             "box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4);",
@@ -40,6 +39,16 @@ def css():
         'margin: -20px;'
     ]
     res = []
+    bg = []
+    for m in range(1, 50):
+        bg.append(f".bg-{m} {{")
+        for j in range(len(back)):
+
+            bg.append(back[j])
+        bg.append(f"padding-top: {m}%;")
+        bg.append(f"padding-bottom: {m}%;")
+        bg.append("}")
+
     for z in range(len(init)):
         res.append(init[z])
     for k in range(1, 11):
@@ -54,7 +63,9 @@ def css():
             for j in range(len(after)):
                 res.append(after[j])
             res.append("}")
-    return res
+    res.append("")
+
+    return res + bg
 
 
 with open("glass/donnees.css", "w") as f:
