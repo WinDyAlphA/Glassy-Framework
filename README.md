@@ -14,8 +14,8 @@ and the background limits
 
 Goes to 
 ``` .container-1-1``` to ```.container-10-10```.  
-First parameter is the width.  
-Second parameter is the height.  
+First parameter is the width of the tile in percentage of parent (10% to 100%).  
+Second parameter is the height of the tile in percentage of parent (10% to 100%).  
 
 ## Proof of work : 
 https://codepen.io/windyyy/pen/NWMJLVN
