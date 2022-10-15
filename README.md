@@ -13,9 +13,9 @@ and the background limits
 ## container
 
 Goes to 
-``` .container-1-1``` to ```.container-10-10```. 
-First parameter is the width. 
-Second parameter is the height. 
+``` .container-1-1``` to ```.container-10-10```.  
+First parameter is the width.  
+Second parameter is the height.  
 
 ### example :
 you need two div, the first one is the background, so you can
