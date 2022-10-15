@@ -20,5 +20,5 @@ Second parameter is the height.
 ### example :
 you need two div, the first one is the background, so you can
 assign a class like "bg-10" to get 10% padding between your background border
-and your tile, the second class is "container-3-10" to get a 30% witdh
-and 100 height
+and your tile, now you put the second div in first one, the second class is "container-3-10" to get a 30% witdh
+and 100% height
