@@ -4,7 +4,7 @@ This is a framework to use Glassmorphism design easily
 
 ## How to use it ?
 
-You need to define a background and a container.
+You need to define a background and a container.  
 the container will be transparent and the background where the tile is will be blur
 
 ## Background 
