@@ -10,8 +10,7 @@ def css():
         '}'
     ]
     back = [
-        'background: url(',
-        '    "https://images.unsplash.com/photo-1631515998058-69359a50da68?ixlib");',
+        'background: inherit,
         'background-repeat: no-repeat;',
         'background-attachment: fixed;',
         'background-size: cover;',
